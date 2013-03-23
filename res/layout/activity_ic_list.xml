@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Available JunkShops"
+        android:textColor="#25a50f"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/ic_list"
+        android:name="com.junkshops.erecycle.ICListFragment"
+         android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        tools:context=".ICListActivity"
+        tools:layout="@android:layout/list_content" />
+
+</RelativeLayout>
